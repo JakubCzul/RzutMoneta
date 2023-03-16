@@ -7,12 +7,12 @@ def orzelczyreszka():
     wyborgracza = input('Podaj co losujesz (orzel czy reszka): ')
     co_wypadlo = random.randint(0, 1)
     if (slownik.get(co_wypadlo) == wyborgracza or slownik.get(co_wypadlo) == wyborgracza):
-        img1 = cv2.imread('C:\\Users\\kubac\\Documents\\GitHub\\PythonRzutMoneta\\zdj\\wygrana.jpg')
+        img1 = cv2.imread('C:\\Users\\kubac\\Documents\\GitHub\\RzutMoneta\\zdj\\wygrana.jpg')
         cv2.imshow('image1', img1)
         cv2.waitKey(0)
 
     elif (slownik.get(co_wypadlo) != wyborgracza or slownik.get(co_wypadlo) != wyborgracza):
-        img0 = cv2.imread('C:\\Users\\kubac\\Documents\\GitHub\\PythonRzutMoneta\\zdj\\przegrana.jpg')
+        img0 = cv2.imread('C:\\Users\\kubac\\Documents\\GitHub\\RzutMoneta\\zdj\\przegrana.jpg')
         cv2.imshow('image', img0)
         cv2.waitKey(0)
 
